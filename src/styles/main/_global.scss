@@ -1,0 +1,36 @@
+body,
+main {
+  position: relative;
+}
+
+html {
+  box-sizing: border-box;
+  scroll-behavior: auto;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  height: 100vh;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+}
+
+body {
+  background-color: $background;
+
+  &::-webkit-scrollbar {
+    width: 0rem;
+  }
+}
+
+button {
+  cursor: pointer;
+}
+
+img {
+  -webkit-user-drag: none;
+  user-select: none;
+}
+
+canvas {
+  -webkit-user-drag: none;
+  user-select: none;
+}
