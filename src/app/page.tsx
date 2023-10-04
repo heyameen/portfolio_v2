@@ -12,7 +12,7 @@ import "@/styles/index.scss"
 
 export default function Home() {
   return (
-    <Layout>
+    <Layout style={{ height: "100%" }}>
       <main>
         <Header />
         <About />

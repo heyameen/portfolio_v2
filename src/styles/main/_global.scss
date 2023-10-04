@@ -11,11 +11,11 @@ html {
   height: 100vh;
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
+  background-color: $background;
 }
 
 body {
   background-color: $background;
-
   &::-webkit-scrollbar {
     width: 0rem;
   }
