@@ -27,11 +27,6 @@ const Header = (): JSX.Element => {
                 modern frameworks, with a proven track record of optimizing
                 performance and ensuring robust security.
               </p>
-
-              {/* <p id="h1BG">
-                Over a two years of experience building products for clients
-                across africa.
-              </p> */}
             </div>
           </div>
 

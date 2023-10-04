@@ -5,7 +5,7 @@ import Header from "@/components/header/Header";
 import About from "@/components/about/About";
 import Caption from "@/components/caption/Caption";
 import Experience from "@/components/experience/Experience";
-import Projects from "@/components/projects/projects";
+import Projects from "@/components/projects/Projects";
 import Contact from "@/components/contact/Contact";
 
 import "@/styles/index.scss";
