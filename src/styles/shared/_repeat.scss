@@ -1,0 +1,44 @@
+@-webkit-keyframes slime {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@keyframes slime {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+#h1BG {
+  background: linear-gradient(
+    76deg,
+    rgb(155 123 255 / 80%),
+    rgb(235 234 208 / 60%),
+    rgb(214 228 185 / 60%),
+    rgb(166 219 196 / 40%),
+    rgb(178 211 243 / 60%)
+  );
+  background-size: 500% 500%;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  -webkit-animation: slime 45s ease infinite;
+  animation: slime 45s ease infinite;
+}
