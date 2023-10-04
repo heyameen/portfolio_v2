@@ -8,7 +8,7 @@ import Experience from "@/components/experience/Experience";
 import Projects from "@/components/projects/projects";
 import Contact from "@/components/contact/Contact";
 
-import "@/styles/index.scss"
+import "@/styles/index.scss";
 
 export default function Home() {
   return (
