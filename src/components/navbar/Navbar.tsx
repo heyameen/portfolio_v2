@@ -1,9 +1,9 @@
 import Link from "next/link";
-import { FC } from "react";
+import React from "react";
 import styles from "./navbar.module.scss";
 import Spotify from "@/lib/spotify";
 
-const Navbar = (): FC => {
+const Navbar = (): React.JSX.Element => {
   return (
     <nav id={styles.nav}>
       <div className={styles.wrapper}>

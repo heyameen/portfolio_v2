@@ -1,8 +1,8 @@
 import Link from "next/link";
-import { FC } from "react";
+import React from "react";
 import styles from "./footer.module.scss";
 
-const Footer = (): FC => {
+const Footer = (): React.JSX.Element => {
   const Year = new Date().getFullYear();
 
   return (

@@ -1,6 +1,6 @@
-import { FC } from "react";
+import React from "react";
 
-const Spotify = (): FC => {
+const Spotify = (): React.JSX.Element => {
   return <div>Spotify</div>;
 };
 
