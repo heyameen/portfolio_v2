@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { FC } from "react";
 import styles from "./footer.module.scss";
 
 const Footer = (): FC => {
@@ -80,7 +81,7 @@ const Footer = (): FC => {
               >
                 li
               </a>
-            </li>            
+            </li>
           </ul>
         </div>
       </footer>

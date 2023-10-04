@@ -1,6 +1,8 @@
+import React from "react";
 import styles from "./header.module.scss";
 
-const Header = (): JSX.Element => {
+
+const Header = (): React.JSX.Element => {
   return (
     <>
       <header id={styles.header}>

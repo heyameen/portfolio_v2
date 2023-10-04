@@ -1,6 +1,7 @@
+import React from "react";
 import styles from "./about.module.scss";
 
-const About = (): JSX.Element => {
+const About = (): React.JSX.Element => {
   return (
     <>
       <section className={styles.about}>
