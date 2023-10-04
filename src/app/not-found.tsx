@@ -15,7 +15,9 @@ export default function NotFound() {
           minHeight: "300px",
         }}
       >
-        <h1 style={{marginBottom: '20px'}}>404! – This Page Isn&apos;t Here</h1>
+        <h1 style={{ marginBottom: "20px" }}>
+          404! – This Page Isn&apos;t Here
+        </h1>
         <p style={{ maxWidth: "320px", textAlign: "center" }}>
           Looks like we have a 404 problem, which means you&apos;ve clicked on
           bad link or entered an invalid URL. Maybe what you&apos;re looking for

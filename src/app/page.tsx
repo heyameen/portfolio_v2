@@ -1,5 +1,3 @@
-import Image from "next/image";
-import styles from "./page.module.css";
 import Layout from "../layouts/layout";
 import Header from "@/components/header/Header";
 import About from "@/components/about/About";
