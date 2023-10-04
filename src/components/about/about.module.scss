@@ -1,0 +1,158 @@
+// Imports in scss
+@import "../../styles/main/variables";
+
+.about {
+  width: 100%;
+  height: fit-content;
+  background: $opaqueBG;
+  position: relative;
+  display: grid;
+  place-items: center;
+  overflow: hidden;
+  padding: 80px 0 80px;
+
+  @media screen and (max-width: $layout-breakpoint-small) {
+    padding: 40px 0 40px;
+  }
+
+  &::before {
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: 0rem;
+    left: -80px;
+    width: 26rem;
+    height: 26rem;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-image: url("https://raw.githubusercontent.com/adeolaadeoti/adeolaadeoti-v2/main/public/webp/hand-left.webp");
+    transform: scale(0.6);
+    display: none;
+
+    @media only screen and (max-width: 45em) {
+      width: 20rem;
+      height: 20rem;
+    }
+  }
+
+  & .aboutWrapper {
+    width: 100%;
+    max-width: 1100px;
+    height: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1;
+    column-gap: 120px;
+
+    @media (max-width: $layout-breakpoint-small) {
+      width: 85%;
+      height: fit-content;
+      justify-content: space-between;
+      flex-direction: column;
+    }
+
+    & .sectionTitle {
+      display: flex;
+      flex-direction: column;
+      align-self: flex-start;
+      min-width: 400px;
+
+      @media screen and (max-width: $layout-breakpoint-small) {
+       min-width: 200px;
+      }
+
+    //   & h1 {
+    //     transform: translate3d(0, 0, 0);
+    //     width: unset;
+    //     line-height: 1.2;
+    //     font-size: 1.4em;
+    //     letter-spacing: 0.02em;
+    //     max-width: 701px;
+    //     display: block;
+    //     margin-block-start: 1em;
+    //     margin-block-end: 1em;
+    //     margin-inline-start: 0px;
+    //     margin-inline-end: 0px;
+    //     font-family: "Josefin Sans", sans-serif;
+    //     color: $linearGrey;
+
+    //     @media screen and (max-width: $layout-breakpoint-small) {
+    //       font-size: 1.2em;
+    //     }
+    //   }
+
+    & h1 {
+        font-size: 3.5em;
+        font-weight: 900;
+        letter-spacing: -0.03em;
+        color: transparent;
+        max-width: 30vw;
+        line-height: 1.5;
+
+        @media (max-width: $layout-breakpoint-small) {
+          font-size: 2.5em;
+          max-width: unset;
+        }
+      }
+
+      & .paraG {
+        max-width: 400px;
+        height: fit-content;
+        font-family: "Josefin Sans", sans-serif;
+        font-size: 15px;
+        line-height: 1.5;
+
+        @media (max-width: 600px) {
+          width: 100%;
+          margin-bottom: 2rem;
+        }
+      }
+    }
+
+    & .articleWrapper {
+      width: 100%;
+
+      & .articleCard {
+        padding: 1em;
+        background: rgb(22, 22, 26);
+        text-align: left;
+
+        &:nth-child(1) {
+          margin-bottom: 35px;
+          @media (max-width: $layout-breakpoint-small) {
+            max-width: 300px;
+          }
+        }
+
+        &:nth-child(2) {
+          margin-bottom: 35px;
+          @media (max-width: $layout-breakpoint-small) {
+            max-width: 300px;
+          }
+        }
+
+        & h1 {
+          font-size: 1em;
+          font-weight: 500;
+          letter-spacing: -0.03em;
+          max-width: 30vw;
+          line-height: 1.5;
+
+          @media (max-width: $layout-breakpoint-small) {
+            font-size: 1em;
+            max-width: unset;
+          }
+        }
+
+        & p {
+          line-height: 1.8;
+          color: $linearGrey;
+          font-size: 0.9em;
+          font-family: "Josefin Sans", sans-serif;
+          margin-top: 1rem;
+        }
+      }
+    }
+  }
+}

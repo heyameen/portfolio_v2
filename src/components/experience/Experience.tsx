@@ -1,6 +1,6 @@
 import React from "react";
 
-const Experience = (): JSX.Element => {
+const Experience = (): React.JSX.Element => {
   return <div>Experience</div>;
 };
 

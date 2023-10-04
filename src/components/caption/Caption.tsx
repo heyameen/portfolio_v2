@@ -1,6 +1,6 @@
 import React from "react";
 
-const Caption = (): JSX.Element => {
+const Caption = (): React.JSX.Element => {
   return <div>Caption</div>;
 };
 
