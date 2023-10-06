@@ -59,30 +59,10 @@
       min-width: 400px;
 
       @media screen and (max-width: $layout-breakpoint-small) {
-       min-width: 200px;
+        min-width: 200px;
       }
 
-    //   & h1 {
-    //     transform: translate3d(0, 0, 0);
-    //     width: unset;
-    //     line-height: 1.2;
-    //     font-size: 1.4em;
-    //     letter-spacing: 0.02em;
-    //     max-width: 701px;
-    //     display: block;
-    //     margin-block-start: 1em;
-    //     margin-block-end: 1em;
-    //     margin-inline-start: 0px;
-    //     margin-inline-end: 0px;
-    //     font-family: "Josefin Sans", sans-serif;
-    //     color: $linearGrey;
-
-    //     @media screen and (max-width: $layout-breakpoint-small) {
-    //       font-size: 1.2em;
-    //     }
-    //   }
-
-    & h1 {
+      & h1 {
         font-size: 3.5em;
         font-weight: 900;
         letter-spacing: -0.03em;

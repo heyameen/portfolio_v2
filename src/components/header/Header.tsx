@@ -34,6 +34,7 @@ const Header = (): React.JSX.Element => {
           <div>
             <span className={styles.dp} />
           </div>
+          <span />
         </div>
       </div>
     </header>
