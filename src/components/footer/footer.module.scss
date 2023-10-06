@@ -61,7 +61,7 @@
         -webkit-text-transform: uppercase;
         text-transform: uppercase;
         font-size: 0.95rem;
-        font-family: "Josefin Sans", sans-serif;
+        font-family: $josefinSans;
         margin-bottom: 40px;
       }
 
@@ -145,7 +145,7 @@
     small {
       -webkit-text-transform: uppercase;
       text-transform: uppercase;
-      font-family: "Dosis", sans-serif;
+      font-family: $dosis;
       font-weight: 700;
 
       @media screen and (max-width: 600px) {
@@ -173,7 +173,7 @@
         text-transform: uppercase;
         display: inline-block;
         position: relative;
-        font-family: "Dosis", sans-serif;
+        font-family: $dosis;
         font-weight: 700;
 
         &::before {

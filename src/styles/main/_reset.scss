@@ -1,3 +1,5 @@
+@import "./variables";
+
 html,
 body,
 div,
@@ -106,13 +108,13 @@ section {
 }
 
 body {
-  @extend %Poppins;
+  font-family: $poppins;
   line-height: 1;
   color: #fff;
 }
 
 main {
-  @extend %Poppins;
+  font-family: $poppins;
   color: #fff;
 }
 
@@ -153,8 +155,12 @@ a {
   text-decoration: none;
   -webkit-transition-duration: 300ms;
   transition-duration: 300ms;
-  -webkit-transition-property: opacity, color, background-color,
-    -webkit-transform, border;
+  -webkit-transition-property:
+    opacity,
+    color,
+    background-color,
+    -webkit-transform,
+    border;
   -webkit-transition-property: opacity, color, background-color, transform,
     border;
   transition-property: opacity, color, background-color, transform, border;

@@ -131,7 +131,7 @@
           max-width: 420px;
           height: fit-content;
           line-height: 1.5;
-          font-family: "Josefin Sans", sans-serif;
+          font-family: $josefinSans;
           font-size: 0.9em;
 
           @media (max-width: 600px) {
