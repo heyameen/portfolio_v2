@@ -1,4 +1,6 @@
+/* eslint-disable camelcase */
 import React from "react";
+import { poppins, josefin_sans, dosis } from "@/lib/fonts";
 
 export const metadata = {
   metadataBase: new URL("https://ameenalade.dev"),
@@ -39,7 +41,10 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en">
+    <html
+      lang="en"
+      className={`${poppins.variable} ${josefin_sans.variable} ${dosis.variable}`}
+    >
       {/* <Navbar /> */}
       <body>{children}</body>
     </html>

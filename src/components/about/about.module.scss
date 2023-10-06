@@ -99,7 +99,7 @@
       & .paraG {
         max-width: 400px;
         height: fit-content;
-        font-family: "Josefin Sans", sans-serif;
+        font-family: $josefinSans;
         font-size: 15px;
         line-height: 1.5;
 
@@ -149,7 +149,7 @@
           line-height: 1.8;
           color: $linearGrey;
           font-size: 0.9em;
-          font-family: "Josefin Sans", sans-serif;
+          font-family: $josefinSans;
           margin-top: 1rem;
         }
       }
