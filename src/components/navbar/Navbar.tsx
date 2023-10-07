@@ -1,7 +1,7 @@
 import Link from "next/link";
 import React from "react";
 import styles from "./navbar.module.scss";
-import Spotify from "@/lib/spotify";
+// import Spotify from "@/lib/spotify";
 
 const Navbar = (): React.JSX.Element => {
   return (
@@ -10,7 +10,6 @@ const Navbar = (): React.JSX.Element => {
         <h1>
           <Link href="/">Ameen.</Link>
         </h1>
-        <Spotify />
       </div>
     </nav>
   );

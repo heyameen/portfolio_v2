@@ -7,6 +7,7 @@
   // z-index: 999;
   display: grid;
   place-items: center;
+  background-color: $opaqueBG;
 
   & .wrapper {
     display: flex;
