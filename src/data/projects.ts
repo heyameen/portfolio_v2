@@ -9,7 +9,7 @@ export const projectData = [
     name: "Space",
     desc: "Space is a convenient hotel booking landing page",
     lang: "HTML + CSS + JavaScript",
-    link: "https://circlefinance.ng",
+    link: "https://heyameen.github.io/Space/",
   },
   {
     name: "Todo",
