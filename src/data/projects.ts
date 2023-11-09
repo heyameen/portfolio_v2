@@ -12,9 +12,9 @@ export const projectData = [
     link: "https://heyameen.github.io/Space/",
   },
   {
-    name: "Todo",
-    desc: "Feature-rich productivity application that helps users keep track of their tasks efficiently.",
-    lang: "REACT + REDUX + SCSS",
+    name: "Avatar generator",
+    desc: "A user-friendly app that provides an engaging experience for users seeking to create custom avatars.",
+    lang: "TypeScript + NextJS + SCSS",
     link: "https://avatar-maker-virid.vercel.app/",
   },
 ];
