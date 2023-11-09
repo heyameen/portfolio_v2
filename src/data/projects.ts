@@ -15,6 +15,6 @@ export const projectData = [
     name: "Todo",
     desc: "Feature-rich productivity application that helps users keep track of their tasks efficiently.",
     lang: "REACT + REDUX + SCSS",
-    link: "https://todo-nine-tau.vercel.app/",
+    link: "https://avatar-maker-virid.vercel.app/",
   },
 ];
