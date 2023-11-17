@@ -13,6 +13,7 @@
     "next": "latest",
     "react": "latest",
     "react-dom": "latest",
+    "react-microsoft-clarity": "^1.2.0",
     "sass": "^1.68.0",
     "swr": "^2.2.4"
   },

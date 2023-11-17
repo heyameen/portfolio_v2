@@ -1,5 +1,5 @@
-/* eslint-disable camelcase */
 import React from "react";
+/* eslint-disable camelcase */
 import { poppins, josefin_sans, dosis } from "@/lib/fonts";
 
 export const metadata = {
@@ -45,7 +45,6 @@ export default function RootLayout({
       lang="en"
       className={`${poppins.variable} ${josefin_sans.variable} ${dosis.variable}`}
     >
-      {/* <Navbar /> */}
       <body>{children}</body>
     </html>
   );
