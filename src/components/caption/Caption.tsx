@@ -46,7 +46,7 @@ const Caption = (): React.JSX.Element => {
           </article>
 
           <a
-            href="https://ameenthegreat.hashnode.dev/"
+            href="https://blog.ameenalade.dev/"
             target="_blank"
             rel="noopener noreferrer"
             className={styles.aCapture}
