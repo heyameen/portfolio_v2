@@ -7,7 +7,7 @@
   background: $opaqueBG;
   display: grid;
   place-items: center;
-  padding: 100px 0 100px;
+  padding: 80px 0 80px;
 
   @media screen and (max-width: $layout-breakpoint-small) {
     padding: 50px 0 50px;
@@ -15,17 +15,16 @@
 
   & .captionWrapper {
     height: 545px;
-    width: 100%;
-    max-width: 1250px;
     background: rgb(22, 22, 26);
     margin-top: 2rem;
+    max-width: 1250px;
     display: flex;
     align-items: center;
     justify-content: center;
 
     @media screen and (max-width: $layout-breakpoint-small) {
       height: auto;
-      width: 98%;
+      max-width: 600px;
       background: #16161a;
       margin-top: 2rem;
       display: flex;
@@ -52,9 +51,12 @@
         height: -webkit-fit-content;
         height: -moz-fit-content;
         height: fit-content;
-        padding: 4.8em 0;
+        padding: 2em;
         border-bottom-width: 0rem;
-        padding-left: 3em;
+      }
+
+      @media screen and (max-width: $layout-breakpoint-xxsmall) {
+        padding: 1.7em;
       }
 
       &:not(:last-of-type) {
@@ -73,11 +75,9 @@
 
         @media screen and (max-width: $layout-breakpoint-small) {
           margin-bottom: 3.8em;
-          text-align: left;
         }
 
         h1 {
-          max-width: 30vw;
           margin: 0;
           font-size: 2.8em;
           font-weight: 900;
@@ -88,18 +88,19 @@
           animation: slime 45s ease infinite;
 
           @media screen and (max-width: $layout-breakpoint-small) {
-            max-width: 100vw;
             font-size: 2.4rem;
+          }
+
+          @media screen and (max-width: $layout-breakpoint-xxsmall) {
+            font-size: 1.8rem;
           }
         }
 
         p {
           transform: translate3d(0, 0, 0);
-          width: unset;
           line-height: 1.2;
           font-size: 1.4em;
           letter-spacing: 0.02em;
-          max-width: 701px;
           display: block;
           margin-block-start: 1em;
           margin-block-end: 1em;
@@ -107,6 +108,7 @@
           margin-inline-end: 0px;
           font-family: $josefinSans;
           color: $linearGrey;
+          max-width: 350px;
 
           @media screen and (max-width: $layout-breakpoint-small) {
             font-size: 1.2em;
@@ -140,6 +142,9 @@
         padding: 1.6em 3em;
         color: $linearGrey;
         border: 1px solid $linearGrey;
+
+        @media screen and (max-width: $layout-breakpoint-small) {
+        }
 
         span {
           background: linear-gradient(
