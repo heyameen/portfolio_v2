@@ -8,17 +8,14 @@ const Caption = (): React.JSX.Element => {
         <div className={styles.capture}>
           <article className={styles.captureText}>
             <h1 id="h1BG">
-              I bridge pixels
+              I merge pixels &amp;
               <br />
-              &amp; performance
+              performance
             </h1>
 
             <p>
-              From open source endeavors,
-              <br />
-              to web apps, &amp;
-              <br />
-              curious experimentations.
+              From open source endeavors, to web apps, &amp; curious
+              experimentations.
             </p>
           </article>
 
@@ -37,11 +34,8 @@ const Caption = (): React.JSX.Element => {
             </h1>
 
             <p>
-              Bits about design,
-              <br />
-              frontend tips and tricks,
-              <br />
-              learning experiences, &amp; life&apos;s moments.
+              Bits about design, frontend tips, learning experiences, &amp;
+              life&apos;s moments.
             </p>
           </article>
 

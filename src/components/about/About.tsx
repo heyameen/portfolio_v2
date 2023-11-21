@@ -1,4 +1,6 @@
 import React from "react";
+import { FaPaintBrush } from "react-icons/fa";
+import { BsGearWideConnected } from "react-icons/bs";
 import styles from "./about.module.scss";
 
 const About = (): React.JSX.Element => {
@@ -15,7 +17,12 @@ const About = (): React.JSX.Element => {
         </div>
         <div className={styles.articleWrapper}>
           <article className={styles.articleCard}>
-            <h1>Form: Artistry in UI/UX</h1>
+            <div className={styles.articleHeader}>
+              <div className={styles.iconContainer}>
+                <FaPaintBrush />
+              </div>
+              <h1>Artistry in UI/UX</h1>
+            </div>
 
             <p>
               While I might not be the stereotypical designer, I have an eye for
@@ -27,7 +34,12 @@ const About = (): React.JSX.Element => {
           </article>
 
           <article className={styles.articleCard}>
-            <h1>Function: Precision in Code & Systems</h1>
+            <div className={styles.articleHeader}>
+              <div className={styles.iconContainer}>
+                <BsGearWideConnected />
+              </div>
+              <h1>Precision in Code & Systems</h1>
+            </div>
 
             <p>
               My toolkit? A diverse range of tools suited for crafting
