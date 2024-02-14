@@ -3,7 +3,7 @@ import styles from "./caption.module.scss";
 
 const Caption = (): React.JSX.Element => {
   return (
-    <section className={styles.caption}>
+    <section className={styles.caption} id="about">
       <div className={styles.captionWrapper}>
         <div className={styles.capture}>
           <article className={styles.captureText}>

@@ -46,5 +46,13 @@ module.exports = {
         endOfLine: "auto",
       },
     ],
+    "jsx-a11y/label-has-associated-control": [
+      2,
+      {
+        controlComponents: [],
+        assert: "either",
+        depth: 3,
+      },
+    ],
   },
 };

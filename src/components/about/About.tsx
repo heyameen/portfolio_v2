@@ -5,7 +5,7 @@ import styles from "./about.module.scss";
 
 const About = (): React.JSX.Element => {
   return (
-    <section className={styles.about}>
+    <section className={styles.about} id="expertise">
       <div className={styles.aboutWrapper}>
         <div className={styles.sectionTitle}>
           <h1 id="h1BG">Expertise</h1>

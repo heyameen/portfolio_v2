@@ -1,5 +1,5 @@
 /* eslint-disable camelcase */
-import { Josefin_Sans, Dosis, Poppins } from "next/font/google";
+import { Josefin_Sans, Dosis, Poppins, Space_Grotesk } from "next/font/google";
 
 const poppins = Poppins({
   weight: ["300", "400", "500"],
@@ -22,4 +22,11 @@ const dosis = Dosis({
   variable: "--dosis-font",
 });
 
-export { poppins, josefin_sans, dosis };
+const space_grotesk = Space_Grotesk({
+  weight: ["400", "500", "600"],
+  display: "swap",
+  subsets: ["latin"],
+  variable: "--space-grotesk",
+});
+
+export { poppins, josefin_sans, dosis, space_grotesk };

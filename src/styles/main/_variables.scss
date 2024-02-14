@@ -15,3 +15,13 @@ $layout-breakpoint-xxsmall: 300px;
 $poppins: var(--poppins-font), sans-serif;
 $josefinSans: var(--josefin-font), sans-serif;
 $dosis: var(--dosis-font), sans-serif;
+$spaceGrotesk: var(--space-grotesk), sans-serif;
+
+$gradient: linear-gradient(
+  76deg,
+  rgba(155, 123, 255, 0.8),
+  rgba(235, 234, 208, 0.6),
+  rgba(214, 228, 185, 0.6),
+  rgba(166, 219, 196, 0.4),
+  rgba(178, 211, 243, 0.6)
+);

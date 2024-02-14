@@ -1,6 +1,6 @@
 import React from "react";
 /* eslint-disable camelcase */
-import { poppins, josefin_sans, dosis } from "@/lib/fonts";
+import { poppins, josefin_sans, dosis, space_grotesk } from "@/lib/fonts";
 
 export const metadata = {
   metadataBase: new URL("https://ameenalade.dev"),
@@ -43,7 +43,7 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${poppins.variable} ${josefin_sans.variable} ${dosis.variable}`}
+      className={`${poppins.variable} ${josefin_sans.variable} ${dosis.variable} ${space_grotesk.variable}`}
     >
       <body>{children}</body>
     </html>

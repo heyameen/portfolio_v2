@@ -1,41 +1,38 @@
 import React from "react";
+import Image from "next/image";
 import styles from "./header.module.scss";
+// import Star from "../../../public/icons/Portal.svg";
 
 const Header = (): React.JSX.Element => {
   return (
-    <header id={styles.header}>
+    <header className={styles.header} id="#header">
       <div className={styles.wrapperLanding}>
+        <Image
+          src="/icons/Portal.svg"
+          width={31}
+          height={31}
+          alt="star"
+          className={styles.leftStar}
+        />
         <div className={styles.text}>
           <div className={styles.textI}>
             <div className={styles.gradientText}>
-              <h1>Software</h1>
-
-              <h1>
-                Developer<span>.</span>
-              </h1>
+              <h1>FRONT-END DEVELOPER</h1>
             </div>
-
             <p>
-              I find fulfillment in seamlessly blending code and design to craft
-              resilient software that brings joy to users.
-            </p>
-          </div>
-
-          <div className={styles.paraG}>
-            <p id="h1BG">
-              Highly skilled at developing scalable web applications using
-              modern frameworks, with a proven track record of optimizing
-              performance and ensuring robust security.
+              I am a developer based in Manchester, UK focused on creating
+              interactive digital experiences on the web.
             </p>
           </div>
         </div>
 
-        <div className={styles.imageH}>
-          <div>
-            <span className={styles.dp} />
-          </div>
-          <span />
-        </div>
+        <Image
+          src="/icons/Portal.svg"
+          width={31}
+          height={31}
+          alt="star"
+          className={styles.rightStar}
+        />
       </div>
     </header>
   );

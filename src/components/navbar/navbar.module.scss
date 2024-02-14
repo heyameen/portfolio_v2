@@ -1,32 +1,126 @@
 @import "../../styles/main/variables";
 
-#nav {
+$radius: 40px;
+$border: 4px;
+$height: 48px;
+$speed: 0.25s;
+$ease: linear(
+  0,
+  0.1641 3.52%,
+  0.311 7.18%,
+  0.4413 10.99%,
+  0.5553 14.96%,
+  0.6539 19.12%,
+  0.738 23.5%,
+  0.8086 28.15%,
+  0.8662 33.12%,
+  0.9078 37.92%,
+  0.9405 43.12%,
+  0.965 48.84%,
+  0.9821 55.28%,
+  0.992 61.97%,
+  0.9976 70.09%,
+  1
+);
+
+.nav {
   width: 100%;
   height: auto;
   padding-top: 3.5rem;
-  // z-index: 999;
+  background-color: $opaqueBG;
   display: grid;
   place-items: center;
-  background-color: $opaqueBG;
+  position: sticky;
+  top: 0;
+  z-index: 10; 
+  backdrop-filter: blur(10px);
+}
 
-  & .wrapper {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    width: 100%;
-    max-width: 1100px;
-    height: fit-content;
+.wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 1100px;
+  height: fit-content;
+}
 
-    @media screen and (max-width: 768px) {
-      max-width: 85%;
-    }
+.title {
+  font-family: $dosis;
+  font-weight: 700;
+  font-size: 1.5rem;
+  color: $linearGrey;
+}
 
-    & h1 {
-      font-family: $dosis;
-      font-weight: 700;
-      font-size: 1.5rem;
-      color: $linearGrey;
-      // z-index: 999999;
-    }
+.tabs {
+  position: relative;
+  display: grid;
+  gap: 2rem;
+  height: $height;
+  width: 418px;
+  grid-auto-flow: column;
+  background: hsl(0, 0%, 11%);
+  grid-auto-columns: 1fr;
+  padding: 4px;
+  transform-style: preserve-3d;
+  border-radius: 290px;
+
+  &::after {
+    position: absolute;
+    content: "";
+    top: -1px;
+    left: -1px;
+    transform: translateZ(-1px);
+    width: 420px;
+    height: 50px;
+    background: $gradient;
+    background-size: 300% 300%;
+    background-position: 0 50%;
+    border-radius: 290px;
+    // animation: moveGradient 4s alternate infinite;
+  }
+}
+
+.tab {
+  padding: 0 clamp(0.5rem, 2vw + 0.25rem, 0.56rem);
+  cursor: pointer;
+  text-align: center;
+  height: 100%;
+  display: grid;
+  place-items: center;
+  background: transparent;
+  border-radius: $radius;
+  transition:
+    background,
+    color $speed ease;
+
+  &:hover {
+    background: hsl(0, 0%, 20%);
+  }
+  &.active {
+    background: hsl(0, 0%, 16%);
+  }
+}
+
+.srOnly {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
+
+.label {
+  color: hsl(0, 0%, 100%);
+  cursor: pointer;
+}
+
+@keyframes moveGradient {
+  50% {
+    background-position: 100% 50%;
   }
 }

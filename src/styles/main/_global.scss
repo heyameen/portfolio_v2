@@ -5,7 +5,8 @@ main {
 
 html {
   box-sizing: border-box;
-  scroll-behavior: auto;
+  --scroll-behavior: smooth !important;
+  scroll-behavior: smooth !important;
   overflow-x: hidden;
   overflow-y: scroll;
   height: 100vh;

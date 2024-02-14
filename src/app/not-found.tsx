@@ -1,6 +1,6 @@
 import Link from "next/link";
 
-import Layout from "@/layouts/layout";
+import Layout from "@/layouts/notFound";
 import "@/styles/index.scss";
 
 export default function NotFound() {

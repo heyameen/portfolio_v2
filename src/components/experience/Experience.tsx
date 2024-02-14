@@ -3,10 +3,10 @@ import styles from "./experience.module.scss";
 
 const Experience = (): React.JSX.Element => {
   return (
-    <section className={styles.experience}>
+    <section className={styles.experience} id="about">
       <div className={styles.expWrapper}>
         <article className={styles.expText}>
-          <h1 id="h1BG">Before now,</h1>
+          <h1 id="h1BG"> 💼 Before now,</h1>
           <p>
             My journey began at Starlabel, where I embraced the foundational
             rigors of web development, ensuring optimal website performance and
