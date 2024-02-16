@@ -7,8 +7,8 @@ export const metadata = {
   title: "Ameen | Creative Software Engineer",
   description:
     "I am passionate about innovation, scalability, performance optimization and excellent user experiences.",
-  image: "https://Ameenalade.dev/meta/ameen.jpg",
-  type: "website",
+  // image: "https://Ameenalade.dev/meta/ameen.jpg",
+  // type: "website",
   icons: [
     {
       rel: "icon",

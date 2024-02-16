@@ -14,6 +14,7 @@ import Navbar from "@/components/navbar/Navbar";
 import Footer from "@/components/footer/Footer";
 
 import "@/styles/index.scss";
+import Stack from "@/components/stack/Stack";
 
 export default function Home() {
   useEffect(() => {
@@ -25,6 +26,7 @@ export default function Home() {
       <Navbar />
       <main>
         <Header />
+        <Stack />
         <Element name="expertise" id="expertise">
           <About />
           <Caption />
