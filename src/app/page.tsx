@@ -22,10 +22,12 @@ export default function Home() {
   }, []);
 
   return (
-    <>
+    <div id="navbar">
       <Navbar />
       <main>
-        <Header />
+        <Element name="home" id="home">
+          <Header />
+        </Element>
         <Stack />
         <Element name="expertise" id="expertise">
           <About />
@@ -40,6 +42,6 @@ export default function Home() {
         <Contact />
       </main>
       <Footer />
-    </>
+    </div>
   );
 }

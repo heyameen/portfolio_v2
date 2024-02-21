@@ -1,7 +1,8 @@
 "use client";
 
 import React, { useState } from "react";
-import { Link } from "react-scroll";
+import { Link as ScrollLink } from "react-scroll";
+import Link from "next/link";
 import Image from "next/image";
 import styles from "./navbar.module.scss";
 
@@ -13,14 +14,14 @@ const Navbar = () => {
   };
 
   return (
-    <nav className={styles.nav} id="navbar">
+    <nav className={styles.nav}>
       <div className={styles.wrapper}>
         <h1 className={styles.title}>
-          <a href="#navbar">Ameen.</a>
+          <Link href="/#navbar">Ameen.</Link>
         </h1>
         <div className={styles.tabs}>
           {["home", "expertise", "about", "projects"].map((tab) => (
-            <Link
+            <ScrollLink
               key={tab}
               activeClass={styles.active}
               to={tab}
@@ -53,7 +54,7 @@ const Navbar = () => {
                   tab.charAt(0).toUpperCase() + tab.slice(1)
                 )}
               </label>
-            </Link>
+            </ScrollLink>
           ))}
         </div>
       </div>
