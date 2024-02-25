@@ -16,10 +16,10 @@ const Stack = (): React.JSX.Element => {
       data-play-state="running"
       data-spill={false}
       style={{
-        "--speed": 20,
-        "--count": 10,
+        "--speed": 25,
+        "--count": 12,
         "--scale": 1,
-        "--blur": 4,
+        "--blur": 1.8,
         "--blurs": BLURS,
       }}
     >
@@ -30,7 +30,7 @@ const Stack = (): React.JSX.Element => {
           ))}
         </div>
         <ul className={styles.ul}>
-          {new Array(10).fill(0).map((item, index) => {
+          {new Array(12).fill(0).map((item, index) => {
             return (
               <li
                 className={styles.li}

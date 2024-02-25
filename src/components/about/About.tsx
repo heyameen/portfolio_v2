@@ -2,6 +2,7 @@ import React from "react";
 import { FaPaintBrush } from "react-icons/fa";
 import { BsGearWideConnected } from "react-icons/bs";
 import styles from "./about.module.scss";
+import ProgressIndicator from "@/components/progressIndicator/ProgressIndicator";
 
 const About = (): React.JSX.Element => {
   return (
@@ -52,6 +53,7 @@ const About = (): React.JSX.Element => {
           </article>
         </div>
       </div>
+      <ProgressIndicator />
     </section>
   );
 };
