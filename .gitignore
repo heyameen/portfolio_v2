@@ -36,4 +36,4 @@ next-env.d.ts
 
 qodana.yaml
 
-.idea
+.idea*

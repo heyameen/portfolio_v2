@@ -3,7 +3,7 @@ import styles from "./contact.module.scss";
 
 const Contact = (): React.JSX.Element => {
   return (
-    <section className={styles.contact}>
+    <section className={styles.contact} id="contact">
       <div className={styles.contactWrapper}>
         <small>
           Let&apos;s elevate your product&apos;s experience together. Whether

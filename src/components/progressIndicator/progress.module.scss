@@ -1,0 +1,62 @@
+@import "../../styles/main/variables";
+
+.container{
+  align-self: flex-start;
+
+  .steps{
+    display: flex;
+    position: relative;
+    margin-bottom: 50px;
+
+    .circle{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 50%;
+      width: 3.5rem;
+      height: 3.5rem;
+      border: 1px solid rgba(255, 255, 255, 0.25);
+      font-family: $spaceGrotesk;
+      font-size: 1.5rem;
+
+      &::after{
+        content: '';
+        position: absolute;
+        width: 1px;
+        height: 80%;
+        border: 1px solid rgba(255, 255, 255, .25);
+        bottom: -30px;
+        left: 28px;
+      }
+
+      &:last-of-type::after {
+        content: none;
+      }
+    }
+
+    .lastCircle::after{
+      content: none;
+    }
+
+    .progress{
+      display: flex;
+      max-width: 550px;
+      margin-left: 3.5rem;
+
+      .header{
+        font-size: 1.6rem;
+        margin-top: 2rem;
+        margin-bottom: 1.75rem;
+        font-family: $spaceGrotesk;
+      }
+
+      .body{
+        font-size: 1.2rem;
+        line-height: 28px;
+        font-weight: lighter;
+      }
+    }
+
+  }
+
+}

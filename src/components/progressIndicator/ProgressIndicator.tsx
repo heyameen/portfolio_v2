@@ -1,24 +1,36 @@
 import React from "react";
+import Image from "next/image";
+import styles from "./progress.module.scss";
+import { expertise } from "@/data/expertise";
 
 const ProgressIndicator = (): React.JSX.Element => {
   return (
-    <ol>
-      <li>
-        <span>1</span>
-        <h3 className="font-medium leading-tight">Personal Info</h3>
-        <p className="text-sm">Step details here</p>
-      </li>
-      <li>
-        <span>2</span>
-        <h3 className="font-medium leading-tight">Account Info</h3>
-        <p className="text-sm">Step details here</p>
-      </li>
-      <li>
-        <span>3</span>
-        <h3 className="font-medium leading-tight">Review</h3>
-        <p className="text-sm">Step details here</p>
-      </li>
-    </ol>
+    <div className={styles.container}>
+      {expertise.map((data, index) => {
+        const isLast = index === expertise.length - 1;
+        return (
+          <div className={styles.steps} key={data.ellipse}>
+            <div
+              className={`${styles.circle} ${isLast ? styles.lastCircle : ""}`}
+            >
+              {data.step}
+            </div>
+            <div className={styles.progress}>
+              <div>
+                <Image
+                  src={data.ellipse}
+                  alt="ellipse"
+                  width={56}
+                  height={56}
+                />
+                <h3 className={styles.header}>{data.headerText}</h3>
+                <p className={styles.body}>{data.body}</p>
+              </div>
+            </div>
+          </div>
+        );
+      })}
+    </div>
   );
 };
 

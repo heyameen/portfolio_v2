@@ -25,9 +25,7 @@ export default function Home() {
     <div id="navbar">
       <Navbar />
       <main>
-        <Element name="home" id="home">
-          <Header />
-        </Element>
+        <Header />
         <Stack />
         <Element name="expertise" id="expertise">
           <About />
@@ -39,7 +37,9 @@ export default function Home() {
         <Element name="projects" id="projects">
           <Projects />
         </Element>
-        <Contact />
+        <Element name="contact" id="contact">
+          <Contact />
+        </Element>
       </main>
       <Footer />
     </div>

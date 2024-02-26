@@ -7,7 +7,7 @@ import Image from "next/image";
 import styles from "./navbar.module.scss";
 
 const Navbar = () => {
-  const [currentTab, setTab] = useState("home");
+  const [currentTab, setTab] = useState("");
 
   const handleTabChange = (tab: string) => {
     setTab(tab);
@@ -16,11 +16,9 @@ const Navbar = () => {
   return (
     <nav className={styles.nav}>
       <div className={styles.wrapper}>
-        <h1 className={styles.title}>
-          <Link href="/#navbar">Ameen.</Link>
-        </h1>
+        <h1 className={styles.title}>Ameen.</h1>
         <div className={styles.tabs}>
-          {["home", "expertise", "about", "projects"].map((tab) => (
+          {["expertise", "about", "projects", "contact"].map((tab) => (
             <ScrollLink
               key={tab}
               activeClass={styles.active}
@@ -29,9 +27,7 @@ const Navbar = () => {
               smooth
               duration={500}
               onClick={() => handleTabChange(tab)}
-              className={`${styles.tab} ${
-                currentTab === tab ? styles.active : ""
-              }`}
+              className={styles.tab}
             >
               <input
                 type="radio"

@@ -34,7 +34,7 @@ const Footer = (): React.JSX.Element => {
             </li>
             <li>
               <a
-                href="https://github.com/pariola-droid"
+                href="https://github.com/heyameen"
                 target="_blanket"
                 rel="noopener"
               >
