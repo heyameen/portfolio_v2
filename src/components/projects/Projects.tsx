@@ -1,7 +1,8 @@
 /* eslint-disable react/button-has-type */
-import React from "react";
-import styles from "./project.module.scss";
-import { projectData } from "@/data/projects";
+import React from 'react'
+import styles from './project.module.scss'
+import { projectData } from '@/data/projects'
+import SectionTitle from '@/components/SectionTitle/SectionTitle'
 
 const Projects = (): React.JSX.Element => {
   // const generateKey = (pre) => {
@@ -10,6 +11,7 @@ const Projects = (): React.JSX.Element => {
 
   return (
     <section className={styles.project} id="projects">
+      <SectionTitle title="Featured projects" />
       <div className={styles.projWrapper}>
         {projectData.map((project) => (
           <div key={project.name} className={styles.projCard}>
@@ -34,7 +36,7 @@ const Projects = (): React.JSX.Element => {
         ))}
       </div>
     </section>
-  );
-};
+  )
+}
 
-export default Projects;
+export default Projects

@@ -1,37 +1,59 @@
 // Imports in scss
-@import "../../styles/main/variables";
+@import '../../styles/main/variables';
+
+
 
 .experience {
   height: fit-content;
   width: 100%;
-  background-color: $opaqueBG;
+  //margin: 5.7rem auto;
+  background: $opaqueBG;
   display: grid;
   place-items: center;
-  padding: 80px 0 80px;
+  padding: 130px 30px;
+
+  & .container{
+    background-color: rgb(22, 22, 26);
+    border-radius: 24px;
+    padding: 130px 0;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
 
 
   & .expWrapper {
-    height: auto;
+    height: 100%;
     width: 100%;
+    max-width: 1500px;
     display: flex;
-    align-items: center;
-    justify-content: center;
-    background: rgb(22, 22, 26);
-    padding: 100px 0 100px;
+    align-self: center;
+    padding: 0 130px;
+    gap: 30px;
 
     @media (max-width: $layout-breakpoint-small) {
       padding: 50px 0 50px;
     }
 
+    & .image{
+      width: 45%;
+      border-radius: 16px;
+      overflow: hidden;
+      position: relative;
+    }
+
     & .expText {
-      width: 100%;
+      background: $darkGrey;
+      width: 55%;
       height: auto;
-      text-align: center;
+      //text-align: center;
       display: flex;
       align-items: center;
       flex-direction: column;
-      max-width: 480px;
-      text-align: justify;
+      //max-width: 480px;
+      //text-align: justify;
+      border-radius: 16px;
+      padding: 45px;
 
       @media (max-width: $layout-breakpoint-small) {
         width: 85%;
@@ -39,12 +61,13 @@
 
       h1 {
         margin: 0;
-        font-size: 3.6em;
+        font-size: 3em;
         font-weight: 900;
         line-height: 1.3;
         letter-spacing: -0.03em;
         display: block;
         margin-bottom: 2rem;
+        font-family: $spaceGrotesk;
 
         @media (max-width: $layout-breakpoint-small) {
           max-width: 100vw;
@@ -55,7 +78,7 @@
 
       p {
         width: 100%;
-        color: $linearGrey;
+        //color: $linearGrey;
         font-size: 1em;
         line-height: 2;
         display: block;

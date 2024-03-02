@@ -1,9 +1,11 @@
-import React from "react";
-import styles from "./caption.module.scss";
+import React from 'react'
+import styles from './caption.module.scss'
+import SectionTitle from '@/components/SectionTitle/SectionTitle'
 
 const Caption = (): React.JSX.Element => {
   return (
     <section className={styles.caption} id="about">
+      {/* <SectionTitle title="Some Featured Projects" /> */}
       <div className={styles.captionWrapper}>
         <div className={styles.capture}>
           <article className={styles.captureText}>
@@ -19,7 +21,7 @@ const Caption = (): React.JSX.Element => {
             </p>
           </article>
 
-          <a href="#projects" className={styles.aCapture}>
+          <a href="/#projects" className={styles.aCapture}>
             see my work
             <span />
           </a>
@@ -51,7 +53,7 @@ const Caption = (): React.JSX.Element => {
         </div>
       </div>
     </section>
-  );
-};
+  )
+}
 
-export default Caption;
+export default Caption

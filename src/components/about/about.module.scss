@@ -1,5 +1,5 @@
 // Imports in scss
-@import "../../styles/main/variables";
+@import '../../styles/main/variables';
 
 .about {
   width: 100%;
@@ -16,7 +16,7 @@
   }
 
   &::before {
-    content: "";
+    content: '';
     display: block;
     position: absolute;
     bottom: 0rem;
@@ -25,7 +25,7 @@
     height: 26rem;
     background-repeat: no-repeat;
     background-size: contain;
-    background-image: url("https://raw.githubusercontent.com/adeolaadeoti/adeolaadeoti-v2/main/public/webp/hand-left.webp");
+    background-image: url('https://raw.githubusercontent.com/adeolaadeoti/adeolaadeoti-v2/main/public/webp/hand-left.webp');
     transform: scale(0.6);
     display: none;
 
@@ -55,11 +55,10 @@
     }
 
     & .section {
-      display: flex;
-      flex-direction: column;
+      //display: flex;
+      //flex-direction: column;
       align-self: flex-start;
       min-width: 400px;
-      margin-bottom: 4rem;
 
       @media screen and (max-width: $layout-breakpoint-small) {
         min-width: 200px;
@@ -67,22 +66,20 @@
         margin-bottom: 2rem;
       }
 
-
-
-      & h1 {
-        font-family: $spaceGrotesk;
-        font-size: 3.5em;
-        font-weight: 900;
-        letter-spacing: -0.03em;
-        color: white;
-        max-width: 30vw;
-        line-height: 1.5;
-
-        @media (max-width: $layout-breakpoint-small) {
-          font-size: 2.5em;
-          max-width: unset;
-        }
-      }
+      //& h1 {
+      //  font-family: $spaceGrotesk;
+      //  font-size: 3.5em;
+      //  font-weight: 900;
+      //  letter-spacing: -0.03em;
+      //  color: white;
+      //  max-width: 30vw;
+      //  line-height: 1.5;
+      //
+      //  @media (max-width: $layout-breakpoint-small) {
+      //    font-size: 2.5em;
+      //    max-width: unset;
+      //  }
+      //}
 
       & .paraG {
         max-width: 400px;
@@ -99,11 +96,10 @@
     }
 
     & .articleWrapper {
-
       @media (max-width: $layout-breakpoint-small) {
         align-self: center;
       }
-      
+
       & .articleCard {
         padding: 1em;
         background: rgb(22, 22, 26);
@@ -146,7 +142,7 @@
           margin-top: 1rem;
         }
 
-        & .articleHeader{
+        & .articleHeader {
           display: flex;
 
           & h1 {
@@ -155,16 +151,15 @@
           }
 
           & .iconContainer {
-            background: #8675B6;
+            background: #8675b6;
             width: 2rem;
             height: 2rem;
             border-radius: 2px;
             display: flex;
             justify-content: center;
-            align-items: center;            
+            align-items: center;
           }
         }
-
       }
     }
   }

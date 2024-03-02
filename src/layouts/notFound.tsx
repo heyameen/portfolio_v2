@@ -1,8 +1,8 @@
-import Footer from "@/components/footer/Footer";
-import Navbar from "@/components/navbar/Navbar";
+import Footer from '@/components/footer/Footer'
+import Navbar from '@/components/navbar/Navbar'
 
 export default function Layout(props: any) {
-  const { children } = props;
+  const { children } = props
 
   return (
     <>
@@ -10,5 +10,5 @@ export default function Layout(props: any) {
       {children}
       <Footer />
     </>
-  );
+  )
 }

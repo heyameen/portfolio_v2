@@ -1,5 +1,5 @@
 // Imports in scss
-@import "../../styles/main/variables";
+@import '../../styles/main/variables';
 
 .contact {
   height: fit-content;
@@ -50,7 +50,7 @@
       font-weight: bold;
       line-height: 2;
       text-transform: capitalize;
-      font-family: $dosis;
+      font-family: $spaceGrotesk;
       text-align: center;
 
       @media screen and (max-width: $layout-breakpoint-small) {

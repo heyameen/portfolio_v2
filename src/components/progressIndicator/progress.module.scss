@@ -1,14 +1,14 @@
-@import "../../styles/main/variables";
+@import '../../styles/main/variables';
 
-.container{
+.container {
   align-self: flex-start;
 
-  .steps{
+  .steps {
     display: flex;
     position: relative;
     margin-bottom: 50px;
 
-    .circle{
+    .circle {
       display: flex;
       justify-content: center;
       align-items: center;
@@ -19,12 +19,12 @@
       font-family: $spaceGrotesk;
       font-size: 1.5rem;
 
-      &::after{
+      &::after {
         content: '';
         position: absolute;
         width: 1px;
         height: 80%;
-        border: 1px solid rgba(255, 255, 255, .25);
+        border: 1px solid rgba(255, 255, 255, 0.25);
         bottom: -30px;
         left: 28px;
       }
@@ -34,29 +34,27 @@
       }
     }
 
-    .lastCircle::after{
+    .lastCircle::after {
       content: none;
     }
 
-    .progress{
+    .progress {
       display: flex;
       max-width: 550px;
       margin-left: 3.5rem;
 
-      .header{
+      .header {
         font-size: 1.6rem;
         margin-top: 2rem;
         margin-bottom: 1.75rem;
         font-family: $spaceGrotesk;
       }
 
-      .body{
+      .body {
         font-size: 1.2rem;
         line-height: 28px;
         font-weight: lighter;
       }
     }
-
   }
-
 }

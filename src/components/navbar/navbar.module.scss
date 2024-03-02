@@ -1,4 +1,4 @@
-@import "../../styles/main/variables";
+@import '../../styles/main/variables';
 
 $radius: 40px;
 $border: 4px;
@@ -71,10 +71,9 @@ $ease: linear(
   transform-style: preserve-3d;
   border-radius: 290px;
 
-
   &::after {
     position: absolute;
-    content: "";
+    content: '';
     top: -1px;
     left: -1px;
     transform: translateZ(-1px);
@@ -84,7 +83,7 @@ $ease: linear(
     background-size: 300% 300%;
     background-position: 0 50%;
     border-radius: 290px;
-     //animation: moveGradient 4s alternate infinite;
+    //animation: moveGradient 4s alternate infinite;
   }
 }
 
@@ -134,12 +133,11 @@ $ease: linear(
 
 @keyframes adjust-nav {
   to {
-    box-shadow: 0 5px 5px -3px rgba(0,0,0,.26);
+    box-shadow: 0 5px 5px -3px rgba(0, 0, 0, 0.26);
     padding-top: 1rem;
     padding-bottom: 1rem;
   }
 }
 
-.nav{
-
+.nav {
 }

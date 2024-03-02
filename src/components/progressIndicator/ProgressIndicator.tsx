@@ -1,17 +1,17 @@
-import React from "react";
-import Image from "next/image";
-import styles from "./progress.module.scss";
-import { expertise } from "@/data/expertise";
+import React from 'react'
+import Image from 'next/image'
+import styles from './progress.module.scss'
+import { expertise } from '@/data/expertise'
 
 const ProgressIndicator = (): React.JSX.Element => {
   return (
     <div className={styles.container}>
       {expertise.map((data, index) => {
-        const isLast = index === expertise.length - 1;
+        const isLast = index === expertise.length - 1
         return (
           <div className={styles.steps} key={data.ellipse}>
             <div
-              className={`${styles.circle} ${isLast ? styles.lastCircle : ""}`}
+              className={`${styles.circle} ${isLast ? styles.lastCircle : ''}`}
             >
               {data.step}
             </div>
@@ -28,10 +28,10 @@ const ProgressIndicator = (): React.JSX.Element => {
               </div>
             </div>
           </div>
-        );
+        )
       })}
     </div>
-  );
-};
+  )
+}
 
-export default ProgressIndicator;
+export default ProgressIndicator

@@ -1,4 +1,4 @@
-@import "../../styles/main/variables";
+@import '../../styles/main/variables';
 
 .container {
   height: 100%;
@@ -8,8 +8,8 @@
   background: $opaqueBG;
 }
 
-.resizable[data-spill=true] .container::after {
-  content: "";
+.resizable[data-spill='true'] .container::after {
+  content: '';
   position: fixed;
   top: 50%;
   left: 50%;
@@ -19,8 +19,8 @@
   pointer-events: none;
   translate: -50% -50%;
   mask:
-          linear-gradient(white, white) 50% 50% / 100% 100% no-repeat,
-          linear-gradient(white, white) 50% 50% / 100cqi 100cqh no-repeat;
+    linear-gradient(white, white) 50% 50% / 100% 100% no-repeat,
+    linear-gradient(white, white) 50% 50% / 100cqi 100cqh no-repeat;
   mask-composite: exclude;
 }
 
@@ -33,7 +33,7 @@
   border-bottom: 1px solid rgba(255, 255, 255, 0.25);
 }
 
-.resizable[data-spill=true] {
+.resizable[data-spill='true'] {
   overflow: visible;
   outline: 4px dashed white;
 }
@@ -42,7 +42,7 @@
   outline: 2px solid hsl(0 0% 100% / 0.5);
 }
 
-[data-spill=true] .container {
+[data-spill='true'] .container {
   mask: unset;
   overflow: visible;
 }
@@ -84,10 +84,10 @@
   height: 65%;
 }
 
-[data-play-state=running] :is(.ul, li) {
+[data-play-state='running'] :is(.ul, li) {
   animation-play-state: running !important;
 }
-[data-play-state=paused] :is(.ul, li) {
+[data-play-state='paused'] :is(.ul, li) {
   animation-play-state: paused !important;
 }
 
@@ -123,11 +123,11 @@
   inset: 0;
   z-index: var(--index);
   mask: linear-gradient(
-                  90deg,
-                  transparent calc(var(--index) * calc((100 / var(--blurs)) * 1%)),
-                  $background calc((var(--index) + 1) * calc((100 / var(--blurs)) * 1%)),
-                  $background calc((var(--index) + 2) * calc((100 / var(--blurs)) * 1%)),
-                  transparent calc((var(--index) + 3) * calc((100 / var(--blurs)) * 1%))
+    90deg,
+    transparent calc(var(--index) * calc((100 / var(--blurs)) * 1%)),
+    $background calc((var(--index) + 1) * calc((100 / var(--blurs)) * 1%)),
+    $background calc((var(--index) + 2) * calc((100 / var(--blurs)) * 1%)),
+    transparent calc((var(--index) + 3) * calc((100 / var(--blurs)) * 1%))
   );
   backdrop-filter: blur(calc((var(--index, 0) * var(--blur, 0)) * 2px));
 }
@@ -136,31 +136,31 @@
   opacity: 0;
 }
 
-[data-outline=true] .blur {
+[data-outline='true'] .blur {
   border: 4px dashed hotpink;
   background: hsl(320 100% 50% / 0.1);
 }
 
-[data-blurring=true] .blur {
+[data-blurring='true'] .blur {
   opacity: 1;
 }
 
 /* The animation stuff */
-@media(prefers-reduced-motion: no-preference) {
-  [data-translate=items] .ul {
+@media (prefers-reduced-motion: no-preference) {
+  [data-translate='items'] .ul {
     gap: 0;
   }
-  [data-translate=items][data-direction=horizontal].container {
+  [data-translate='items'][data-direction='horizontal'].container {
     padding-inline: 0;
   }
 
-  [data-translate=items] .li {
+  [data-translate='items'] .li {
     --duration: calc(var(--speed) * 1s);
     --delay: calc((var(--duration) / var(--count)) * (var(--index, 0) * -1));
     animation: slide var(--duration) var(--delay) infinite linear paused;
     translate: var(--origin-x) var(--origin-y);
   }
-  [data-translate=items][data-direction=horizontal] .li {
+  [data-translate='items'][data-direction='horizontal'] .li {
     --origin-x: calc(((var(--count) - var(--index)) + var(--inset, 0)) * 100%);
     --origin-y: 0;
     --destination-x: calc(calc((var(--index) + 1 + var(--outset, 0)) * -100%));

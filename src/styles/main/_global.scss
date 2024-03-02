@@ -1,3 +1,6 @@
+@import './variables';
+
+
 body,
 main {
   position: relative;
@@ -12,7 +15,8 @@ html {
   height: 100vh;
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
-  background-color: $background;
+  background-color: $background !important;
+  //background-color: $opaqueBG;
 }
 
 body {

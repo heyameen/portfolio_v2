@@ -1,4 +1,4 @@
-@import "../../styles/main/variables";
+@import '../../styles/main/variables';
 
 .header {
   width: 100%;
@@ -8,7 +8,6 @@
   place-items: center;
   background: $opaqueBG;
   padding: 3.25rem 0 0;
-  
 
   @media screen and (max-width: 768px) {
     padding: 100px 0 50px;
@@ -21,7 +20,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background-image: url("../../../public/header.png");
+    background-image: url('../../../public/header.png');
     background-repeat: no-repeat;
     background-size: contain;
     position: relative;
@@ -66,7 +65,6 @@
         justify-content: center;
         align-items: center;
         height: auto;
-        
 
         @media (max-width: 600px) {
           width: 100%;
@@ -213,7 +211,7 @@
           background-size: cover;
           background-position-x: center;
           margin-left: -2.2em;
-          background-image: url("https://ik.imagekit.io/ymmfblb1qwkf/ameen.jpg?updatedAt=1696429648772");
+          background-image: url('https://ik.imagekit.io/ymmfblb1qwkf/ameen.jpg?updatedAt=1696429648772');
           border: 0px;
 
           @media (max-width: 786px) {
@@ -236,7 +234,7 @@
           width: 270px;
         }
 
-         @media (max-width: 280px) {
+        @media (max-width: 280px) {
           // margin: 0;
           height: 200px;
           width: 200px;

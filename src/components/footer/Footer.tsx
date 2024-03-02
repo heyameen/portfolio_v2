@@ -1,9 +1,9 @@
-import Link from "next/link";
-import React from "react";
-import styles from "./footer.module.scss";
+import Link from 'next/link'
+import React from 'react'
+import styles from './footer.module.scss'
 
 const Footer = (): React.JSX.Element => {
-  const Year = new Date().getFullYear();
+  const Year = new Date().getFullYear()
 
   return (
     <footer id={styles.footer}>
@@ -84,7 +84,7 @@ const Footer = (): React.JSX.Element => {
         </ul>
       </div>
     </footer>
-  );
-};
+  )
+}
 
-export default Footer;
+export default Footer

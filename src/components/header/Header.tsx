@@ -1,6 +1,6 @@
-import React from "react";
-import Image from "next/image";
-import styles from "./header.module.scss";
+import React from 'react'
+import Image from 'next/image'
+import styles from './header.module.scss'
 // import Star from "../../../public/icons/Portal.svg";
 
 const Header = (): React.JSX.Element => {
@@ -35,7 +35,7 @@ const Header = (): React.JSX.Element => {
         />
       </div>
     </header>
-  );
-};
+  )
+}
 
-export default Header;
+export default Header

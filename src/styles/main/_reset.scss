@@ -1,4 +1,4 @@
-@import "./variables";
+@import './variables';
 
 html,
 body,
@@ -88,7 +88,7 @@ video {
   font: inherit;
   vertical-align: baseline;
 
-  @include media("<=tablet") {
+  @include media('<=tablet') {
     scroll-behavior: smooth !important;
   }
 }
@@ -132,7 +132,7 @@ blockquote:before,
 blockquote:after,
 q:before,
 q:after {
-  content: "";
+  content: '';
   content: none;
 }
 
