@@ -16,11 +16,10 @@ html {
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
   background-color: $background !important;
-  //background-color: $opaqueBG;
+  font-family: $spaceGrotesk;
 }
 
 body {
-  background-color: $background;
   &::-webkit-scrollbar {
     width: 0;
   }
